@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="checkinout"
+            type="com.example.doancuoiky.activity.CheckInOutActivity" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CheckInActivity">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Reservation"
+            android:textColor="#192236"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/userIDEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="User ID"
+            app:layout_constraintStart_toStartOf="@+id/numberphoneEditText"
+            app:layout_constraintTop_toBottomOf="@+id/numberphoneEditText" />
+
+        <Button
+            android:id="@+id/checkUserIDButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            app:layout_constraintStart_toEndOf="@id/userIDEditText"
+            app:layout_constraintTop_toTopOf="@id/userIDEditText" />
+
+        <EditText
+            android:id="@+id/typeEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            app:layout_constraintStart_toStartOf="@id/userIDEditText"
+            app:layout_constraintTop_toBottomOf="@id/userIDEditText"/>
+
+        <EditText
+            android:id="@+id/numberEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Room number"
+            app:layout_constraintStart_toStartOf="@id/userIDEditText"
+            app:layout_constraintTop_toBottomOf="@id/typeEditText" />
+
+        <EditText
+            android:id="@+id/checkInTimeEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Check in time"
+            app:layout_constraintStart_toStartOf="@id/userIDEditText"
+            app:layout_constraintTop_toBottomOf="@id/numberEditText" />
+
+        <EditText
+            android:id="@+id/checkOutTimeEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Check out time"
+            app:layout_constraintStart_toStartOf="@id/userIDEditText"
+            app:layout_constraintTop_toBottomOf="@id/checkInTimeEditText" />
+
+        <EditText
+            android:id="@+id/moreRequiredEditText"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:ems="12"
+            android:gravity="start|top"
+            android:hint="More require"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/numberphoneEditText"
+            app:layout_constraintTop_toBottomOf="@id/checkOutTimeEditText" />
+
+        <TextView
+            android:id="@+id/precisionPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Precision price"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reviewTextMultiLine" />
+
+        <Button
+            android:id="@+id/applyButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="Apply"
+            app:layout_constraintStart_toEndOf="@+id/deleteButton"
+            app:layout_constraintTop_toTopOf="@+id/addButton" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="Delete"
+            app:layout_constraintStart_toEndOf="@+id/addButton"
+            app:layout_constraintTop_toTopOf="@+id/addButton" />
+
+        <Button
+            android:id="@+id/checkOutButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Check out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/checkInButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Check in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/getCheckInTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now"
+            app:layout_constraintStart_toEndOf="@+id/checkInTimeEditText"
+            app:layout_constraintTop_toTopOf="@+id/checkInTimeEditText" />
+
+        <Button
+            android:id="@+id/getCheckOutTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now"
+            app:layout_constraintStart_toEndOf="@+id/checkOutTimeEditText"
+            app:layout_constraintTop_toTopOf="@+id/checkOutTimeEditText" />
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/back_button" />
+
+        <EditText
+            android:id="@+id/numberphoneEditText"
+            android:layout_width="299dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:hint= "Phone Number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/btnCheckNumberPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            app:layout_constraintStart_toEndOf="@+id/numberphoneEditText"
+            app:layout_constraintTop_toTopOf="@+id/numberphoneEditText" />
+
+        <EditText
+            android:id="@+id/reviewTextMultiLine"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:ems="12"
+            android:gravity="start|top"
+            android:hint="Review"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/numberphoneEditText"
+            app:layout_constraintTop_toBottomOf="@+id/moreRequiredEditText" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/precisionPriceTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

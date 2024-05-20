@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_backround"
+    android:id="@+id/ctLayout">
+
+    <TextView
+        android:id="@+id/userIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="userID"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roomNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="room number"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@id/userIDTextView"
+        app:layout_constraintStart_toEndOf="@id/userIDTextView"/>
+
+    <TextView
+        android:id="@+id/checkInTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check in time"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/userIDTextView"
+        app:layout_constraintTop_toBottomOf="@id/userIDTextView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  - "
+        app:layout_constraintStart_toEndOf="@id/checkInTimeTextView"
+        app:layout_constraintTop_toTopOf="@id/checkInTimeTextView"/>
+
+    <TextView
+        android:id="@+id/checkOutTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check out time"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/checkInTimeTextView"
+        app:layout_constraintTop_toTopOf="@id/checkInTimeTextView"/>
+
+    <TextView
+        android:id="@+id/moreRequiredTextView"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:text="more require"
+        android:scrollbars="vertical"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/userIDTextView"
+        app:layout_constraintTop_toBottomOf="@id/checkInTimeTextView"/>
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toltal price"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/moreRequiredTextView"
+        app:layout_constraintTop_toBottomOf="@id/moreRequiredTextView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

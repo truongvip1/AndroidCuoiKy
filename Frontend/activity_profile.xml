@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="profile"
+            type="com.example.doancuoiky.activity.UserProfileActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.UserProfileActivity">
+
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/roleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Customer"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/avatarImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTextView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="name: "
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avatarImage" />
+
+        <TextView
+            android:id="@+id/numberPhoneTextview0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Phone number: "
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/nameTextView0"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView0" />
+
+        <TextView
+            android:id="@+id/emailTextView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="email: "
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/nameTextView0"
+            app:layout_constraintTop_toBottomOf="@id/numberPhoneTextview0" />
+
+        <TextView
+            android:id="@+id/usernameTextView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="user name: "
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/nameTextView0"
+            app:layout_constraintTop_toBottomOf="@id/emailTextView0" />
+
+        <TextView
+            android:id="@+id/addressTextView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="address: "
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/nameTextView0"
+            app:layout_constraintTop_toBottomOf="@id/usernameTextView0" />
+
+        <TextView
+            android:id="@+id/salaryTextView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="salary: "
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/addressTextView0"
+            app:layout_constraintTop_toBottomOf="@id/addressTextView0" />
+
+        <TextView
+            android:id="@+id/birthDayTextView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="birthDay: "
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/addressTextView0"
+            app:layout_constraintTop_toBottomOf="@id/salaryTextView0" />
+
+        <TextView
+            android:id="@+id/hireDateTextView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="hiredate:"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@id/addressTextView0"
+            app:layout_constraintTop_toBottomOf="@id/birthDayTextView0" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="name"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/numberPhoneTextview0"
+            app:layout_constraintTop_toBottomOf="@id/avatarImage" />
+
+        <TextView
+            android:id="@+id/numberPhoneTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="number phone"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/numberPhoneTextview0"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="email"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/numberPhoneTextview0"
+            app:layout_constraintTop_toBottomOf="@id/numberPhoneTextview" />
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="user name"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/numberPhoneTextview0"
+            app:layout_constraintTop_toBottomOf="@id/emailTextView" />
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="address"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/numberPhoneTextview0"
+            app:layout_constraintTop_toBottomOf="@id/usernameTextView" />
+
+        <TextView
+            android:id="@+id/salaryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="salary"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/numberPhoneTextview0"
+            app:layout_constraintTop_toBottomOf="@id/addressTextView" />
+
+        <TextView
+            android:id="@+id/birthDayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="birthday"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/numberPhoneTextview0"
+            app:layout_constraintTop_toBottomOf="@id/salaryTextView" />
+
+        <TextView
+            android:id="@+id/hireDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="hiredate"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/numberPhoneTextview0"
+            app:layout_constraintTop_toBottomOf="@id/birthDayTextView" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/back_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
